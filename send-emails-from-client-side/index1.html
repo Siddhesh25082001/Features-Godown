@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emails Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <div class="mt-3" style="text-align:center;">
+        <h4>Sending Mails from Client Side JS</h4>
+    </div>
+    <div class="container " style="width:50%;">
+        <div class="input-group mt-3">
+            <span class="input-group-text" id="basic-addon1">From </span>
+            <input type="email" id="from" name="from" class="form-control" value="shettyrohit268@gmail.com" placeholder="From" aria-label="Username" aria-describedby="basic-addon1" disabled>
+        </div>
+        <div class="input-group mt-3">
+            <span class="input-group-text" id="basic-addon1">To <span style="color: red;"> *</span></span>
+            <input type="email" id="mail_to" name="mail_to" class="form-control" placeholder="Enter Mail Address.." aria-label="Username" aria-describedby="basic-addon1" required>
+        </div>
+        <div class="input-group mt-3">
+            <span class="input-group-text" id="basic-addon1">Subject <span style="color: red;"> *</span></span>
+            <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter Subject.." aria-label="Username" aria-describedby="basic-addon1" required>
+        </div>
+        <div class="input-group mt-3">
+            <span class="input-group-text" id="basic-addon1">Mail Body <span style="color: red;"> *</span></span>
+            <textarea type="email" id="mail_body" name="mail_body" class="form-control" placeholder="Enter Mail body.." aria-label="Username" aria-describedby="basic-addon1" required></textarea>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+            <button type="button" onclick="sendMail()" class="btn btn-primary">Send Mail</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
